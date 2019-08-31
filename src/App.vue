@@ -1,27 +1,36 @@
 <template>
-  <v-card class="mx-auto">
-    <v-card-title>I'm a title</v-card-title>
-    <v-card-text>I'm card text</v-card-text>
-    <v-card-actions>
-      <v-btn text>Click</v-btn>
-    </v-card-actions>
-  </v-card>
+  <v-app>
+    <v-app-bar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>Vuetify</span>
+        <span class="font-weight-light">MATERIAL DESIGN</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        text
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2">Latest Release</span>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
   components: {
+    HelloWorld,
   },
   data: () => ({
     //
   }),
 };
 </script>
-
-<style lang="scss" scoped>
-.v-card {
-  max-width: 344px;
-}
-</style>

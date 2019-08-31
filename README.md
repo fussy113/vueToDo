@@ -1,7 +1,4 @@
 # www
-```
-docker run --rm -w /var/www -it -v ${PWD}:/var/www -p 8080:8080 node:lts-alpine sh
-```
 
 ## Project setup
 ```
@@ -26,6 +23,11 @@ yarn run test
 ### Lints and fixes files
 ```
 yarn run lint
+```
+
+### Run your unit tests
+```
+yarn run test:unit
 ```
 
 ### Customize configuration
